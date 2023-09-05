@@ -14,24 +14,14 @@ int main()
     if (days > 365)
     {
 
-        int zakat = 0.025 * income;
+        int zakat = (2.5 / 100) * income;
         income -= zakat;
-        cout << "2.5% Zakat deducted: $" << zakat << endl;
+        cout << "2.5% Zakat deducted. Your new income after Zakat: $" << income << endl;
     }
 
-    switch (days < 365)
+    else
     {
-    case 1:
-    {
-        cout << "Days are less then a year." << endl;
-    }
-
-    break;
-
-    default:
-
-        cout << "Your remaining income after zakat deduction: $" << income << "%" << endl;
-        break;
+        cout << "No Zakat deduction needed. Your income remains: $" << income << endl;
     }
 
     return 0;
