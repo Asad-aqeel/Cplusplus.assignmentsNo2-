@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-   //Dynamic multiplication table using c++...
+   //Dynamic multiplication table in c++...
 
 int main (){
 
